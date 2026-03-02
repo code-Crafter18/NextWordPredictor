@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color:linear-gradient(180deg, #000 0%, #000);
+}
+
+.title {
+  color: rgb(220, 220, 220);
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 2cm; /* Adds 2cm gap from the top */
+  box-sizing: border-box;
+  margin-left: 350px;
+}
+
+.chatbox {
+  width: 100%;
+  max-width: 900px;
+  width: 20cm;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: none; 
+  overflow-y: hidden; 
+  background-color: rgb(64, 64, 64);
+  color: rgb(220, 220, 220);
+  max-height: 250px;
+}
+
+.chatbox:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.predictions-container {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.prediction-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #007bff;
+  background-color: #e7f3ff;
+  color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.prediction-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
